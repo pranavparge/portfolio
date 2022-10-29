@@ -14,6 +14,10 @@
 /* @media only screen and (min-width: 1200px) {
 } */
 
+a {
+  all: unset;
+}
+
 .navbar {
   width: 100%;
   min-height: 10vh;

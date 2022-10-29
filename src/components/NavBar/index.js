@@ -36,19 +36,20 @@ const Navbar = () => {
   return (
     <header className={navbarClasses.join(" ")}>
       <nav className="nav1">Pranav Parge</nav>
-      <nav
+      <a
         style={{
           visibility: visible,
           opacity: !rotate ? "0" : "1",
           transition: "all .5s",
         }}
         className="nav3"
+        href="#projects"
       >
         Projects
-      </nav>
-      <nav style={{ visibility: visible }} className="nav3">
+      </a>
+      <a href="#about" style={{ visibility: visible }} className="nav3">
         About
-      </nav>
+      </a>
       <nav
         className={(rotate && "nav2-rotate") || "nav2-rotate-not"}
         onClick={showMenu}
