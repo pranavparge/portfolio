@@ -1,0 +1,82 @@
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+} */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+} */
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+} */
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+} */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+} */
+
+.navbar {
+  width: 100%;
+  min-height: 10vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  background-color: #000;
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav1 {
+  font-size: xx-large;
+  font-weight: lighter;
+  margin-left: calc(24px + 2vmin);
+}
+
+.nav3 {
+  font-size: xx-large;
+  font-weight: lighter;
+  margin-left: calc(24px + 2vmin);
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav3:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav3:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav2-rotate-not {
+  font-size: 3em;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: transform;
+  margin-right: calc(24px + 2vmin);
+}
+
+.nav2-rotate {
+  font-size: 3em;
+  cursor: pointer;
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+  transition-property: transform;
+  margin-right: calc(24px + 2vmin);
+}
