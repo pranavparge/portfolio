@@ -7,37 +7,43 @@
   pointer-events: none;
 }
 
-.Portfolio-header {
+.dotColor {
+  color: #4800ff;
+}
+
+section {
+  all: unset;
+  top: 0;
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+.portfolio-header {
   min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: calc(80px + 2vmin);
   color: #ffffff;
-  /* background-image: url("../public/arrow.svg"); */
 }
 
-.About-header {
+.about-header {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: calc(80px + 2vmin);
   color: #ffffff;
-  /* background-image: url("../public/arrow.svg"); */
+  background-color: #000000;
 }
 
-.Projects-header {
+.projects-header {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: calc(80px + 2vmin);
   color: #ffffff;
-  /* background-image: url("../public/arrow.svg"); */
-}
-
-.headerBackground {
   background-color: #000000;
 }
 

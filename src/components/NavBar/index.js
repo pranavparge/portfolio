@@ -33,9 +33,20 @@ const Navbar = () => {
     );
   };
 
+  const aboutRef = React.useRef();
+
+  const aboutInView = () => {
+    window.scrollTo({
+      top: 2500,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <header className={navbarClasses.join(" ")}>
-      <nav className="nav1">Pranav Parge</nav>
+      <nav className="nav1">
+        Pranav Parge<span className="dot"></span>
+      </nav>
       <a
         style={{
           visibility: visible,
@@ -47,7 +58,17 @@ const Navbar = () => {
       >
         Projects
       </a>
-      <a href="#about" style={{ visibility: visible }} className="nav3">
+      <a
+        onClick={aboutInView}
+        ref={aboutRef}
+        href="#about"
+        style={{
+          visibility: visible,
+          opacity: !rotate ? "0" : "1",
+          transition: "all .5s",
+        }}
+        className="nav3"
+      >
         About
       </a>
       <nav

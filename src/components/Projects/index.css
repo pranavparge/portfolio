@@ -1,4 +1,11 @@
 .Projects {
-  /* background-color: #dc5f00; */
+  text-align: justify;
+  font-size: calc(8px + 2vmin);
+  color: #ffffff;
+  background-color: #000000;
+  margin: 10vh;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

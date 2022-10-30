@@ -11,20 +11,40 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
-      <header className="Portfolio-header">
-        <h1 className="headerBackground">Portfolio</h1>
-      </header>
-      <Portfolio></Portfolio>
-      <header className="About-header">
-        <h1 className="headerBackground">About</h1>
-      </header>
-      <About></About>
-      <header className="Projects-header">
-        <h1 className="headerBackground">Projects</h1>
-      </header>
-      <Projects></Projects>
-      <Footer></Footer>
+      <Navbar />
+      <section>
+        <header className="portfolio-header">
+          <h1>
+            Portfolio<span className="dotColor">.</span>
+          </h1>
+        </header>
+      </section>
+      <section>
+        <Portfolio />
+      </section>
+      <section>
+        <header className="about-header">
+          <h1>
+            About<span className="dotColor">.</span>
+          </h1>
+        </header>
+      </section>
+
+      <section id="about">
+        <About />
+      </section>
+
+      <section>
+        <header className="projects-header">
+          <h1>
+            Projects<span className="dotColor">.</span>
+          </h1>
+        </header>
+      </section>
+      <section id="projects">
+        <Projects />
+        <Footer />
+      </section>
     </div>
   );
 }
