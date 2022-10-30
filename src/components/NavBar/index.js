@@ -27,10 +27,14 @@ const Navbar = ({ showMenu }) => {
 
   const showMenuOptions = (e) => {
     e.preventDefault();
-    setRotate((prevState) => !prevState);
-    setVisible(
-      (prevState) => (prevState === "visible" && "hidden") || "visible"
-    );
+    setRotate(true);
+    setVisible("visible");
+  };
+
+  const closeMenuOptions = (e) => {
+    e.preventDefault();
+    setRotate(false);
+    setVisible("hidden");
   };
 
   const aboutRef = React.useRef();
@@ -49,6 +53,10 @@ const Navbar = ({ showMenu }) => {
     setRotate(false);
   };
 
+  const portfolioInView = () => {
+    window.scroll(0, 0);
+  };
+
   React.useEffect(() => {
     console.log(showMenu);
     setVisible("visible");
@@ -60,10 +68,14 @@ const Navbar = ({ showMenu }) => {
   }, [showMenu]);
 
   return (
-    <header className={navbarClasses.join(" ")}>
-      <nav className="nav1">
+    <nav
+      className={navbarClasses.join(" ")}
+      onMouseOver={showMenuOptions}
+      onMouseLeave={closeMenuOptions}
+    >
+      <a className="nav1" href="#portfolio" onClick={portfolioInView}>
         Pranav Parge<span className="dot"></span>
-      </nav>
+      </a>
       <a
         style={{
           visibility: visible,
@@ -91,11 +103,12 @@ const Navbar = ({ showMenu }) => {
       </a>
       <nav
         className={(rotate && "nav2-rotate") || "nav2-rotate-not"}
-        onClick={showMenuOptions}
+        onMouseOver={showMenuOptions}
+        onMouseLeave={closeMenuOptions}
       >
         +
       </nav>
-    </header>
+    </nav>
   );
 };
 

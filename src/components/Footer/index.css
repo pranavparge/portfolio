@@ -10,10 +10,33 @@
   font-size: calc(2vw + 2vmin);
 }
 
+.arrowDown {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(0.5turn);
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.toTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #000000;
+  font-size: calc(1vw + 2vmin);
+  font-weight: lighter;
+  cursor: pointer;
+  padding: 2vh;
+}
+
 .email {
   font-size: calc(2vw + 2vmin);
   font-weight: lighter;
-  margin-left: calc(8px + 2vmin);
   display: inline-block;
   position: relative;
   cursor: pointer;

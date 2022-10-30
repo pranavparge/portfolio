@@ -50,6 +50,7 @@ a {
   font-size: calc(1vw + 2vmin);
   font-weight: lighter;
   margin-left: calc(24px + 2vmin);
+  cursor: pointer;
 }
 
 .nav3 {
@@ -90,6 +91,13 @@ a {
 .nav2-rotate {
   font-size: calc(2vw + 2vmin);
   cursor: pointer;
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+  transition-property: transform;
+  margin-right: calc(24px + 2vmin);
+}
+
+.nav2-rotate-not:hover {
   transform: rotate(45deg);
   transition-duration: 0.5s;
   transition-property: transform;
