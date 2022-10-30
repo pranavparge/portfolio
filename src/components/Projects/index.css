@@ -1,9 +1,9 @@
 .Projects {
   text-align: justify;
-  font-size: calc(8px + 2vmin);
+  font-size: calc(1vw + 2vmin);
   color: #ffffff;
   background-color: #000000;
-  margin: 10vh;
+  padding: 10vh;
   min-height: 100vh;
   display: flex;
   align-items: center;

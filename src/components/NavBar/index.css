@@ -47,13 +47,13 @@ a {
 }
 
 .nav1 {
-  font-size: xx-large;
+  font-size: calc(1vw + 2vmin);
   font-weight: lighter;
   margin-left: calc(24px + 2vmin);
 }
 
 .nav3 {
-  font-size: xx-large;
+  font-size: calc(1vw + 2vmin);
   font-weight: lighter;
   margin-left: calc(24px + 2vmin);
   display: inline-block;
@@ -80,7 +80,7 @@ a {
 }
 
 .nav2-rotate-not {
-  font-size: 3em;
+  font-size: calc(1vw + 2vmin);
   cursor: pointer;
   transition-duration: 0.5s;
   transition-property: transform;
@@ -88,7 +88,7 @@ a {
 }
 
 .nav2-rotate {
-  font-size: 3em;
+  font-size: calc(1vw + 2vmin);
   cursor: pointer;
   transform: rotate(45deg);
   transition-duration: 0.5s;

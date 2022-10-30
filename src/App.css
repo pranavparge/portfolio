@@ -23,7 +23,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(80px + 2vmin);
+  font-size: calc(8vw + 2vmin);
   color: #ffffff;
 }
 
@@ -32,7 +32,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(80px + 2vmin);
+  font-size: calc(8vw + 2vmin);
   color: #ffffff;
   background-color: #000000;
 }
@@ -42,7 +42,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(80px + 2vmin);
+  font-size: calc(8vw + 2vmin);
   color: #ffffff;
   background-color: #000000;
 }

@@ -7,11 +7,11 @@
   color: #000000;
   align-items: center;
   justify-content: center;
-  font-size: calc(12px + 2vmin);
+  font-size: calc(2vw + 2vmin);
 }
 
 .email {
-  font-size: xx-large;
+  font-size: calc(2vw + 2vmin);
   font-weight: lighter;
   margin-left: calc(8px + 2vmin);
   display: inline-block;

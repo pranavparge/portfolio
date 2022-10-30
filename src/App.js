@@ -23,6 +23,7 @@ function App() {
   return (
     <div className="App">
       <Navbar showMenu={showMenu} />
+
       <section>
         <header className="portfolio-header">
           <h1>
@@ -30,9 +31,11 @@ function App() {
           </h1>
         </header>
       </section>
+
       <section>
         <Portfolio />
       </section>
+
       <section>
         <header className="about-header">
           <h1>
@@ -52,6 +55,7 @@ function App() {
           </h1>
         </header>
       </section>
+
       <section id="projects">
         <Projects />
         <Footer />
