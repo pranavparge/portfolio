@@ -7,6 +7,7 @@ import Portfolio from "./components/Portfolio";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import Beam from "./components/Beam";
 
 function App() {
   const [showMenu, setShowMenu] = React.useState(false);
@@ -30,6 +31,7 @@ function App() {
             Portfolio<span className="dotColor">.</span>
           </h1>
         </header>
+        <Beam />
       </section>
 
       <section>
@@ -42,6 +44,7 @@ function App() {
             About<span className="dotColor">.</span>
           </h1>
         </header>
+        <Beam />
       </section>
 
       <section id="about">
@@ -54,6 +57,7 @@ function App() {
             Projects<span className="dotColor">.</span>
           </h1>
         </header>
+        <Beam />
       </section>
 
       <section id="projects">

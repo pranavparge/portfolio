@@ -36,10 +36,17 @@ const Navbar = ({ showMenu }) => {
   const aboutRef = React.useRef();
 
   const aboutInView = () => {
+    setVisible("hidden");
+    setRotate(false);
     window.scrollTo({
       top: 2500,
       behavior: "smooth",
     });
+  };
+
+  const projectsInView = () => {
+    setVisible("hidden");
+    setRotate(false);
   };
 
   React.useEffect(() => {
@@ -65,6 +72,7 @@ const Navbar = ({ showMenu }) => {
         }}
         className="nav3"
         href="#projects"
+        onClick={projectsInView}
       >
         Projects
       </a>
