@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-const Navbar = ({ showMenu }) => {
+const Navbar = ({ showMenu, activeMenu }) => {
   const [scrolled, setScrolled] = React.useState(false);
   const [visible, setVisible] = React.useState("hidden");
   const [rotate, setRotate] = React.useState(false);
@@ -75,7 +75,7 @@ const Navbar = ({ showMenu }) => {
           opacity: !rotate ? "0" : "1",
           transition: "all .5s",
         }}
-        className="nav1"
+        className={(activeMenu === "projects" && "nav1 underline") || "nav1"}
         href="#projects"
         onClick={projectsInView}
       >
@@ -90,7 +90,7 @@ const Navbar = ({ showMenu }) => {
           opacity: !rotate ? "0" : "1",
           transition: "all .5s",
         }}
-        className="nav1"
+        className={(activeMenu === "about" && "nav1 underline") || "nav1"}
       >
         About
       </a>

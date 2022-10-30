@@ -28,18 +28,22 @@ function App() {
   const portfolioInView = useIsInViewport(portfolioRef);
   const aboutInView = useIsInViewport(aboutRef);
   const projectsInView = useIsInViewport(projectsRef);
+  let activeMenu = "";
 
   if (portfolioInView && !aboutInView && !projectsInView) {
     window.document.title = "Pranav - Portfolio";
+    activeMenu = "portfolio";
   } else if (portfolioInView && aboutInView && !projectsInView) {
     window.document.title = "Pranav - About";
+    activeMenu = "about";
   } else {
     window.document.title = "Pranav - Projects";
+    activeMenu = "projects";
   }
 
   return (
     <div className="App">
-      <Navbar showMenu={showMenu} />
+      <Navbar showMenu={showMenu} activeMenu={activeMenu} />
 
       <section>
         <header className="portfolio-header">

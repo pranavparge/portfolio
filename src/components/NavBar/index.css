@@ -68,6 +68,11 @@ a {
   transition: transform 0.25s ease-out;
 }
 
+.underline {
+  text-decoration: underline;
+  text-decoration-color: #4800ff;
+}
+
 .nav1:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
