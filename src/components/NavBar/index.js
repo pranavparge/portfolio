@@ -34,6 +34,14 @@ const Navbar = ({ showMenu, activeMenu }) => {
     setVisible("hidden");
   };
 
+  const mobileMenuOptions = (e) => {
+    e.preventDefault();
+    setRotate((prevState) => !prevState);
+    setVisible(
+      (prevState) => (prevState === "visible" && "hidden") || "visible"
+    );
+  };
+
   const aboutInView = () => {
     window.scrollTo({
       top: 2100,
@@ -60,13 +68,19 @@ const Navbar = ({ showMenu, activeMenu }) => {
     }, 800);
   }, [showMenu]);
 
+  console.log(activeMenu);
+
   return (
     <nav
       className={navbarClasses.join(" ")}
       onMouseOver={showMenuOptions}
       onMouseLeave={closeMenuOptions}
     >
-      <a className="nav1" href="#portfolio" onClick={portfolioInView}>
+      <a
+        className={(activeMenu === "portfolio" && "nav1 underline") || "nav1"}
+        href="#portfolio"
+        onClick={portfolioInView}
+      >
         Pranav Parge<span className="dot"></span>
       </a>
       <a
@@ -94,13 +108,15 @@ const Navbar = ({ showMenu, activeMenu }) => {
       >
         About
       </a>
-      <nav
+      <a
+        href="#close"
         className={(rotate && "nav2-rotate") || "nav2-rotate-not"}
         onMouseOver={showMenuOptions}
         onMouseLeave={closeMenuOptions}
+        onClick={(window.innerWidth < 768 && mobileMenuOptions) || undefined}
       >
         +
-      </nav>
+      </a>
     </nav>
   );
 };

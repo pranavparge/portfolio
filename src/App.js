@@ -12,6 +12,7 @@ import useIsInViewport from "./utils/InView";
 
 function App() {
   const [showMenu, setShowMenu] = React.useState(false);
+  const [activeMenu, setActiveMenu] = React.useState("");
   const portfolioRef = React.useRef();
   const aboutRef = React.useRef();
   const projectsRef = React.useRef();
@@ -28,18 +29,20 @@ function App() {
   const portfolioInView = useIsInViewport(portfolioRef);
   const aboutInView = useIsInViewport(aboutRef);
   const projectsInView = useIsInViewport(projectsRef);
-  let activeMenu = "";
 
-  if (portfolioInView && !aboutInView && !projectsInView) {
-    window.document.title = "Pranav - Portfolio";
-    activeMenu = "portfolio";
-  } else if (portfolioInView && aboutInView && !projectsInView) {
-    window.document.title = "Pranav - About";
-    activeMenu = "about";
-  } else {
-    window.document.title = "Pranav - Projects";
-    activeMenu = "projects";
-  }
+  React.useEffect(() => {
+    console.log(portfolioInView, aboutInView, projectsInView);
+    if (portfolioInView && !aboutInView && !projectsInView) {
+      window.document.title = "Pranav - Portfolio";
+      setActiveMenu("portfolio");
+    } else if (portfolioInView && aboutInView && !projectsInView) {
+      window.document.title = "Pranav - About";
+      setActiveMenu("about");
+    } else {
+      window.document.title = "Pranav - Projects";
+      setActiveMenu("projects");
+    }
+  }, [portfolioInView, aboutInView, projectsInView]);
 
   return (
     <div className="App">
