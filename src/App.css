@@ -1,5 +1,8 @@
 .App {
   background-color: #000000;
+  display: block;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .App-logo {

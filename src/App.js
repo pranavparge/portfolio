@@ -65,7 +65,7 @@ function App() {
         <Beam />
       </section>
 
-      <section>
+      <section id="portfolio">
         <Portfolio portfolioRef={portfolioRef} />
       </section>
 

@@ -5,7 +5,6 @@ const Navbar = ({ showMenu, activeMenu }) => {
   const [scrolled, setScrolled] = React.useState(false);
   const [visible, setVisible] = React.useState("hidden");
   const [rotate, setRotate] = React.useState(false);
-  const aboutRef = React.useRef();
 
   let navbarClasses = ["navbar"];
 
@@ -42,19 +41,6 @@ const Navbar = ({ showMenu, activeMenu }) => {
     );
   };
 
-  const aboutInView = () => {
-    window.scrollTo({
-      top: 2100,
-      behavior: "smooth",
-    });
-  };
-
-  const projectsInView = () => {};
-
-  const portfolioInView = () => {
-    window.scroll(0, 0);
-  };
-
   React.useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   });
@@ -77,38 +63,34 @@ const Navbar = ({ showMenu, activeMenu }) => {
       <a
         className={(activeMenu === "portfolio" && "nav1 underline") || "nav1"}
         href="#portfolio"
-        onClick={portfolioInView}
       >
         Pranav Parge<span className="dot"></span>
       </a>
       <a
+        className={(activeMenu === "projects" && "nav1 underline") || "nav1"}
+        href="#projects"
         style={{
           visibility: visible,
           opacity: !rotate ? "0" : "1",
           transition: "all .5s",
         }}
-        className={(activeMenu === "projects" && "nav1 underline") || "nav1"}
-        href="#projects"
-        onClick={projectsInView}
       >
         Projects
       </a>
       <a
-        onClick={aboutInView}
-        ref={aboutRef}
+        className={(activeMenu === "about" && "nav1 underline") || "nav1"}
         href="#about"
         style={{
           visibility: visible,
           opacity: !rotate ? "0" : "1",
           transition: "all .5s",
         }}
-        className={(activeMenu === "about" && "nav1 underline") || "nav1"}
       >
         About
       </a>
       <a
-        href="#close"
         className={(rotate && "nav2-rotate") || "nav2-rotate-not"}
+        href="#close"
         onMouseOver={showMenuOptions}
         onMouseLeave={closeMenuOptions}
         onClick={(window.innerWidth < 768 && mobileMenuOptions) || undefined}
