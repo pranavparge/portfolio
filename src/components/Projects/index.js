@@ -1,9 +1,9 @@
 import React from "react";
 import "./index.css";
 
-function Projects() {
+function Projects({ projectsRef }) {
   return (
-    <div className="Projects">
+    <div ref={projectsRef} className="Projects">
       In finance, stock (also capital stock) consists of the shares of which
       ownership of a corporation or company is divided.(Especially in American
       English, the word "stocks" is also used to refer to shares.) A single

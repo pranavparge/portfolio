@@ -1,9 +1,9 @@
 import React from "react";
 import "./index.css";
 
-function Portfolio() {
+function Portfolio({ portfolioRef }) {
   return (
-    <div className="Portfolio">
+    <div ref={portfolioRef} className="Portfolio">
       The term “portfolio” refers to any combination of financial assets such as
       stocks, bonds and cash. Portfolios may be held by individual investors or
       managed by financial professionals, hedge funds, banks and other financial

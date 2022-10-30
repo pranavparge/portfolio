@@ -8,9 +8,13 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Beam from "./components/Beam";
+import useIsInViewport from "./utils/InView";
 
 function App() {
   const [showMenu, setShowMenu] = React.useState(false);
+  const portfolioRef = React.useRef();
+  const aboutRef = React.useRef();
+  const projectsRef = React.useRef();
 
   React.useEffect(() => {
     window.onscroll = () => {
@@ -20,6 +24,18 @@ function App() {
 
     return () => (window.onscroll = null);
   });
+
+  const portfolioInView = useIsInViewport(portfolioRef);
+  const aboutInView = useIsInViewport(aboutRef);
+  const projectsInView = useIsInViewport(projectsRef);
+
+  if (portfolioInView && !aboutInView && !projectsInView) {
+    window.document.title = "Pranav - Portfolio";
+  } else if (portfolioInView && aboutInView && !projectsInView) {
+    window.document.title = "Pranav - About";
+  } else {
+    window.document.title = "Pranav - Projects";
+  }
 
   return (
     <div className="App">
@@ -35,7 +51,7 @@ function App() {
       </section>
 
       <section>
-        <Portfolio />
+        <Portfolio portfolioRef={portfolioRef} />
       </section>
 
       <section>
@@ -48,7 +64,7 @@ function App() {
       </section>
 
       <section id="about">
-        <About />
+        <About aboutRef={aboutRef} />
       </section>
 
       <section>
@@ -61,7 +77,7 @@ function App() {
       </section>
 
       <section id="projects">
-        <Projects />
+        <Projects projectsRef={projectsRef} />
         <Footer />
       </section>
     </div>

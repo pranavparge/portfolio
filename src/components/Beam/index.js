@@ -13,7 +13,7 @@ function Beam() {
         <polyline
           fill="none"
           stroke="#FFF"
-          stroke-width="2"
+          strokeWidth="2"
           points="937 991 960.336 1005.098 983.673 991"
           transform="translate(-936 -990)"
         />

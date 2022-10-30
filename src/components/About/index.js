@@ -1,9 +1,9 @@
 import React from "react";
 import "./index.css";
 
-function About() {
+function About({ aboutRef }) {
   return (
-    <div className="About">
+    <div ref={aboutRef} className="About">
       There are many types of portfolios including the market portfolio and the
       zero-investment portfolio. A portfolio's asset allocation may be managed
       utilizing any of the following investment approaches and principles:

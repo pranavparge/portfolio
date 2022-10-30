@@ -5,6 +5,13 @@ const Navbar = ({ showMenu }) => {
   const [scrolled, setScrolled] = React.useState(false);
   const [visible, setVisible] = React.useState("hidden");
   const [rotate, setRotate] = React.useState(false);
+  const aboutRef = React.useRef();
+
+  let navbarClasses = ["navbar"];
+
+  if (scrolled) {
+    navbarClasses.push("scrolled");
+  }
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -14,16 +21,6 @@ const Navbar = ({ showMenu }) => {
       setScrolled(false);
     }
   };
-
-  React.useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  });
-
-  let navbarClasses = ["navbar"];
-
-  if (scrolled) {
-    navbarClasses.push("scrolled");
-  }
 
   const showMenuOptions = (e) => {
     e.preventDefault();
@@ -37,11 +34,8 @@ const Navbar = ({ showMenu }) => {
     setVisible("hidden");
   };
 
-  const aboutRef = React.useRef();
-
   const aboutInView = () => {
-    setVisible("hidden");
-    setRotate(false);
+    window.document.title = "Pranav - About";
     window.scrollTo({
       top: 2100,
       behavior: "smooth",
@@ -49,16 +43,19 @@ const Navbar = ({ showMenu }) => {
   };
 
   const projectsInView = () => {
-    setVisible("hidden");
-    setRotate(false);
+    window.document.title = "Pranav - Projects";
   };
 
   const portfolioInView = () => {
+    window.document.title = "Pranav - Portfolio";
     window.scroll(0, 0);
   };
 
   React.useEffect(() => {
-    console.log(showMenu);
+    window.addEventListener("scroll", handleScroll);
+  });
+
+  React.useEffect(() => {
     setVisible("visible");
     setRotate(true);
     setTimeout(() => {
