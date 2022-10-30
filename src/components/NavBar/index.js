@@ -35,19 +35,15 @@ const Navbar = ({ showMenu }) => {
   };
 
   const aboutInView = () => {
-    window.document.title = "Pranav - About";
     window.scrollTo({
       top: 2100,
       behavior: "smooth",
     });
   };
 
-  const projectsInView = () => {
-    window.document.title = "Pranav - Projects";
-  };
+  const projectsInView = () => {};
 
   const portfolioInView = () => {
-    window.document.title = "Pranav - Portfolio";
     window.scroll(0, 0);
   };
 
