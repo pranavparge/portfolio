@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-const Navbar = () => {
+const Navbar = ({ showMenu }) => {
   const [scrolled, setScrolled] = React.useState(false);
   const [visible, setVisible] = React.useState("hidden");
   const [rotate, setRotate] = React.useState(false);
@@ -25,7 +25,7 @@ const Navbar = () => {
     navbarClasses.push("scrolled");
   }
 
-  const showMenu = (e) => {
+  const showMenuOptions = (e) => {
     e.preventDefault();
     setRotate((prevState) => !prevState);
     setVisible(
@@ -41,6 +41,16 @@ const Navbar = () => {
       behavior: "smooth",
     });
   };
+
+  React.useEffect(() => {
+    console.log(showMenu);
+    setVisible("visible");
+    setRotate(true);
+    setTimeout(() => {
+      setVisible("hidden");
+      setRotate(false);
+    }, 800);
+  }, [showMenu]);
 
   return (
     <header className={navbarClasses.join(" ")}>
@@ -73,7 +83,7 @@ const Navbar = () => {
       </a>
       <nav
         className={(rotate && "nav2-rotate") || "nav2-rotate-not"}
-        onClick={showMenu}
+        onClick={showMenuOptions}
       >
         +
       </nav>

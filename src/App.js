@@ -1,6 +1,6 @@
 // import logo from "./logo.svg";
 // <img src={logo} className="App-logo" alt="logo" />
-
+import React from "react";
 import "./App.css";
 import Navbar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
@@ -9,9 +9,20 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
 function App() {
+  const [showMenu, setShowMenu] = React.useState(false);
+
+  React.useEffect(() => {
+    window.onscroll = () => {
+      window.pageYOffset === 0 && setShowMenu(true);
+      window.pageYOffset > 0 && setShowMenu(false);
+    };
+
+    return () => (window.onscroll = null);
+  });
+
   return (
     <div className="App">
-      <Navbar />
+      <Navbar showMenu={showMenu} />
       <section>
         <header className="portfolio-header">
           <h1>
