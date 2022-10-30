@@ -50,19 +50,12 @@ a {
   font-size: calc(1vw + 2vmin);
   font-weight: lighter;
   margin-left: calc(24px + 2vmin);
-  cursor: pointer;
-}
-
-.nav3 {
-  font-size: calc(1vw + 2vmin);
-  font-weight: lighter;
-  margin-left: calc(24px + 2vmin);
   display: inline-block;
   position: relative;
   cursor: pointer;
 }
 
-.nav3:after {
+.nav1:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -75,7 +68,7 @@ a {
   transition: transform 0.25s ease-out;
 }
 
-.nav3:hover:after {
+.nav1:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -95,6 +88,7 @@ a {
   transition-duration: 0.5s;
   transition-property: transform;
   margin-right: calc(24px + 2vmin);
+  color: #4800ff;
 }
 
 .nav2-rotate-not:hover {

@@ -43,7 +43,7 @@ const Navbar = ({ showMenu }) => {
     setVisible("hidden");
     setRotate(false);
     window.scrollTo({
-      top: 2500,
+      top: 2100,
       behavior: "smooth",
     });
   };
@@ -82,7 +82,7 @@ const Navbar = ({ showMenu }) => {
           opacity: !rotate ? "0" : "1",
           transition: "all .5s",
         }}
-        className="nav3"
+        className="nav1"
         href="#projects"
         onClick={projectsInView}
       >
@@ -97,7 +97,7 @@ const Navbar = ({ showMenu }) => {
           opacity: !rotate ? "0" : "1",
           transition: "all .5s",
         }}
-        className="nav3"
+        className="nav1"
       >
         About
       </a>

@@ -34,7 +34,7 @@ function App() {
         <Beam />
       </section>
 
-      <section id="portfolio">
+      <section>
         <Portfolio />
       </section>
 
