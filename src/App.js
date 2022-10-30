@@ -31,14 +31,22 @@ function App() {
   const projectsInView = useIsInViewport(projectsRef);
 
   React.useEffect(() => {
-    console.log(portfolioInView, aboutInView, projectsInView);
-    if (portfolioInView && !aboutInView && !projectsInView) {
+    if (
+      (portfolioInView && !aboutInView && !projectsInView) ||
+      (!portfolioInView && !aboutInView && !projectsInView)
+    ) {
       window.document.title = "Pranav - Portfolio";
       setActiveMenu("portfolio");
-    } else if (portfolioInView && aboutInView && !projectsInView) {
+    } else if (
+      (portfolioInView && aboutInView && !projectsInView) ||
+      (!portfolioInView && aboutInView && !projectsInView)
+    ) {
       window.document.title = "Pranav - About";
       setActiveMenu("about");
-    } else {
+    } else if (
+      (portfolioInView && aboutInView && projectsInView) ||
+      (!portfolioInView && !aboutInView && projectsInView)
+    ) {
       window.document.title = "Pranav - Projects";
       setActiveMenu("projects");
     }

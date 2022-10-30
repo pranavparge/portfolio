@@ -68,8 +68,6 @@ const Navbar = ({ showMenu, activeMenu }) => {
     }, 800);
   }, [showMenu]);
 
-  console.log(activeMenu);
-
   return (
     <nav
       className={navbarClasses.join(" ")}
