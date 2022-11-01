@@ -1,9 +1,9 @@
 import React from "react";
 import "./index.css";
 
-function Beam() {
+function Arrow() {
   return (
-    <div className="Beam">
+    <div className="Arrow">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="49"
@@ -22,4 +22,4 @@ function Beam() {
   );
 }
 
-export default Beam;
+export default Arrow;

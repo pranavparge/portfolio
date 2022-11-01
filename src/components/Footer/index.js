@@ -24,6 +24,7 @@ function Footer() {
           transform="translate(-936 -990)"
         />
       </svg>
+
       <div className="toTop" onClick={scrollToTop}>
         Back to top
       </div>

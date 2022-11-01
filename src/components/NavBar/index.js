@@ -88,15 +88,14 @@ const Navbar = ({ showMenu, activeMenu }) => {
       >
         About
       </a>
-      <a
+      <span
         className={(rotate && "nav2-rotate") || "nav2-rotate-not"}
-        href="#close"
         onMouseOver={showMenuOptions}
         onMouseLeave={closeMenuOptions}
         onClick={(window.innerWidth < 768 && mobileMenuOptions) || undefined}
       >
         +
-      </a>
+      </span>
     </nav>
   );
 };

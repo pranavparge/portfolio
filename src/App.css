@@ -52,6 +52,7 @@
   justify-content: center;
   font-size: calc(5vw + 2vmin);
   color: #ffffff;
+  background-color: #000000;
 }
 
 .about-header {

@@ -20,6 +20,7 @@
   transform: rotate(0.5turn);
   background-color: #000000;
   cursor: pointer;
+  margin-bottom: 2vh;
 }
 
 .toTop {
@@ -32,7 +33,7 @@
   font-size: calc(1vw + 2vmin);
   font-weight: lighter;
   cursor: pointer;
-  padding: 2vh;
+  margin-bottom: 8vh;
 }
 
 .footerItem {
