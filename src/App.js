@@ -58,7 +58,7 @@ function App() {
 
       <section>
         <header className="portfolio-header">
-          <h1>
+          <h1 className="animate-character">
             Portfolio<span className="dotColor">.</span>
           </h1>
         </header>
