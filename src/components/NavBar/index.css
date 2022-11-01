@@ -21,7 +21,7 @@ a {
 .dot {
   height: 10px;
   width: 10px;
-  background-color: #4800ff;
+  background-color: #290092;
   border-radius: 50%;
   display: inline-block;
   margin: 0px 0px 0px 3px;
@@ -49,8 +49,8 @@ a {
 .underline {
   text-decoration-line: underline;
   -webkit-text-decoration-line: underline;
-  text-decoration-color: #4800ff;
-  -webkit-text-decoration-color: #4800ff;
+  text-decoration-color: #290092;
+  -webkit-text-decoration-color: #290092;
 }
 
 .nav1 {
@@ -70,7 +70,7 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #4800ff;
+  background-color: #290092;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -95,7 +95,7 @@ a {
   transition-duration: 0.5s;
   transition-property: transform;
   margin-right: calc(24px + 2vmin);
-  color: #4800ff;
+  color: #290092;
 }
 
 .nav2-rotate-not:hover {

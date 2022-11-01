@@ -58,8 +58,9 @@ function App() {
 
       <section>
         <header className="portfolio-header">
-          <h1 className="animate-character">
-            Portfolio<span className="dotColor">.</span>
+          <h1>
+            <span className="animate-character">Portfolio</span>
+            <span className="dotColor">.</span>
           </h1>
         </header>
         <Beam />
@@ -72,7 +73,7 @@ function App() {
       <section>
         <header className="about-header">
           <h1>
-            About<span className="dotColor">.</span>
+            About<span className="dotColorTheme">.</span>
           </h1>
         </header>
         <Beam />
@@ -85,7 +86,7 @@ function App() {
       <section>
         <header className="projects-header">
           <h1>
-            Projects<span className="dotColor">.</span>
+            Projects<span className="dotColorTheme">.</span>
           </h1>
         </header>
         <Beam />

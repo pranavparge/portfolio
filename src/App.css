@@ -7,19 +7,15 @@
   pointer-events: none;
 }
 
-.dotColor {
-  color: #4800ff;
+.dotColorWhite {
+  color: #ffffff;
+}
+
+.dotColorTheme {
+  color: #290092;
 }
 
 .animate-character {
-  text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #4800ff 0%,
-    #7b49fc 29%,
-    #b397fc 67%,
-    #290092 100%
-  );
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -28,13 +24,20 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
   display: inline-block;
+  background-image: linear-gradient(-45deg, #290092, #290092, #23a6d5, #23d5ab);
+  animation: gradient 15s ease infinite;
 }
 
-@keyframes textclip {
-  to {
-    background-position: 200% center;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 

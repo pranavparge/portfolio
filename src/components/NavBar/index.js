@@ -61,7 +61,7 @@ const Navbar = ({ showMenu, activeMenu }) => {
       onMouseLeave={closeMenuOptions}
     >
       <a
-        className={(activeMenu === "portfolio" && "nav1 underline") || "nav1"}
+        className={(activeMenu === "portfolio" && "nav1") || "nav1"}
         href="#portfolio"
       >
         Pranav Parge<span className="dot"></span>
