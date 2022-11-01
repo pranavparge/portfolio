@@ -1,13 +1,14 @@
 .Footer {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   min-height: 20vh;
   background-color: #ffffff;
   color: #000000;
-  align-items: center;
-  justify-content: center;
   font-size: calc(2vw + 2vmin);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: calc(2vw + 2vmin);
 }
 
 .arrowDown {
@@ -34,7 +35,7 @@
   padding: 2vh;
 }
 
-.email {
+.footerItem {
   font-size: calc(2vw + 2vmin);
   font-weight: lighter;
   display: inline-block;
@@ -42,7 +43,7 @@
   cursor: pointer;
 }
 
-.email:after {
+.footerItem:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -55,7 +56,7 @@
   transition: transform 0.25s ease-out;
 }
 
-.email:hover:after {
+.footerItem:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }

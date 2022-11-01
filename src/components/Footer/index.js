@@ -28,17 +28,31 @@ function Footer() {
         Back to top
       </div>
 
-      <div className="Footer">
-        <div
-          className="email"
-          onClick={(e) => {
-            window.location.href = "mailto:pranavparge@gmail.com";
-            e.preventDefault();
-          }}
+      <footer className="Footer">
+        <a
+          className="footerItem"
+          href="https://www.linkedin.com/in/pranavparge"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
+        <a
+          className="footerItem"
+          href="mailto:pranavparge@gmail.com?subject=Hello Pranav"
         >
           pranavparge@gmail.com
-        </div>
-      </div>
+        </a>
+        <a
+          className="footerItem"
+          href="https://drive.google.com/file/d/12RiYLr7BI0ouZLBf-HX2EfaQ_ZTcJmKR/view?usp=sharing"
+          download="resume-pranav"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Resume
+        </a>
+      </footer>
     </>
   );
 }

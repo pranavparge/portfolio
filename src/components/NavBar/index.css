@@ -54,7 +54,7 @@ a {
 }
 
 .nav1 {
-  font-size: calc(1vw + 2vmin);
+  font-size: calc(2vw + 2vmin);
   font-weight: lighter;
   margin-left: calc(24px + 2vmin);
   display: inline-block;
