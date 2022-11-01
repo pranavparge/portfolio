@@ -1,8 +1,5 @@
 .App {
   background-color: #000000;
-  display: block;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
 }
 
 .App-logo {
@@ -14,12 +11,12 @@
   color: #4800ff;
 }
 
-section {
+/* section {
   all: unset;
   top: 0;
   position: sticky;
   position: -webkit-sticky;
-}
+} */
 
 .portfolio-header {
   min-height: 80vh;
