@@ -4,8 +4,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(2vw + 2vmin);
-  color: #ffffff;
-  background-color: #000000;
   animation: bounce 2s infinite;
 }
 

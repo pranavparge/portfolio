@@ -36,8 +36,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #ffffff;
-  background-color: #000;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .scrolled {
@@ -95,7 +95,6 @@ a {
   transition-duration: 0.5s;
   transition-property: transform;
   margin-right: calc(24px + 2vmin);
-  color: #290092;
 }
 
 .nav2-rotate-not:hover {

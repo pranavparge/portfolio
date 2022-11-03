@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: center;
   transform: rotate(0.5turn);
-  background-color: #000000;
+  background-color: #ffffff;
   cursor: pointer;
   margin-bottom: 2vh;
 }
@@ -28,12 +28,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  background-color: #000000;
+  color: #000000;
+  background-color: #ffffff;
   font-size: calc(1vw + 2vmin);
   font-weight: lighter;
   cursor: pointer;
-  margin-bottom: 8vh;
+  margin-bottom: 10vh;
 }
 
 .footerItem {

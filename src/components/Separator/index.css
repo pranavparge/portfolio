@@ -1,0 +1,24 @@
+.Separator {
+  --color_33: 204, 204, 204;
+
+  --lnw: 1px;
+  --brd: var(--color_33);
+  --alpha-brd: 1;
+  transform-origin: center 0.5px;
+
+  left: 0;
+  margin-left: 76px;
+  width: calc(100% - 76px - 76px);
+  min-width: initial;
+  height: 5px;
+
+  position: relative;
+  margin: 0px 76px 0 76px;
+  grid-area: 2 / 1 / 3 / 2;
+  justify-self: stretch;
+  align-self: start;
+
+  box-sizing: border-box;
+  border-top: var(--lnw, 2px) solid
+    rgba(var(--brd, var(--color_15)), var(--alpha-brd, 1));
+}

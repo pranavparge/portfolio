@@ -1,8 +1,8 @@
 .About {
   text-align: justify;
   font-size: calc(1vw + 2vmin);
-  color: #ffffff;
-  background-color: #000000;
+  color: #000000;
+  background-color: #ffffff;
   padding: 10vh;
   min-height: 100vh;
   display: flex;

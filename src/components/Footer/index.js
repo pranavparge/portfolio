@@ -1,4 +1,5 @@
 import React from "react";
+import Separator from "../Separator";
 import "./index.css";
 
 function Footer() {
@@ -18,7 +19,7 @@ function Footer() {
       >
         <polyline
           fill="none"
-          stroke="#fff"
+          stroke="#000"
           strokeWidth="2"
           points="937 991 960.336 1005.098 983.673 991"
           transform="translate(-936 -990)"
@@ -28,6 +29,8 @@ function Footer() {
       <div className="toTop" onClick={scrollToTop}>
         Back to top
       </div>
+
+      <Separator />
 
       <footer className="Footer">
         <a

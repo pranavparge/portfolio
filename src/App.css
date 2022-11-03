@@ -1,5 +1,5 @@
 .App {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .App-logo {
@@ -8,7 +8,7 @@
 }
 
 .dotColorWhite {
-  color: #ffffff;
+  color: #000000;
 }
 
 .dotColorTheme {
@@ -23,7 +23,7 @@
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
+  color: #000000;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -51,8 +51,8 @@
   align-items: center;
   justify-content: center;
   font-size: calc(5vw + 2vmin);
-  color: #ffffff;
-  background-color: #000000;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .about-header {
@@ -61,8 +61,8 @@
   align-items: center;
   justify-content: center;
   font-size: calc(8vw + 2vmin);
-  color: #ffffff;
-  background-color: #000000;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .projects-header {
@@ -71,8 +71,8 @@
   align-items: center;
   justify-content: center;
   font-size: calc(8vw + 2vmin);
-  color: #ffffff;
-  background-color: #000000;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 @media (prefers-reduced-motion: no-preference) {
