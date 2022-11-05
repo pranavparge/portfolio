@@ -64,7 +64,7 @@ const Navbar = ({ showMenu, activeMenu }) => {
         className={(activeMenu === "portfolio" && "nav1") || "nav1"}
         href="#portfolio"
       >
-        Pranav Parge
+        Pranav
         <span className="dot" />
       </a>
       <span
