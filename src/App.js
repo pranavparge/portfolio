@@ -1,5 +1,5 @@
-// import logo from "./logo.svg";
-// <img src={logo} className="App-logo" alt="logo" />
+// import logo from "./assets/react-logo.svg";
+// <img src={logo} className="App-logo" alt="React logo" />
 import React from "react";
 import "./App.css";
 import Navbar from "./components/NavBar";
@@ -8,8 +8,6 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Arrow from "./components/Arrow";
 import useIsInViewport from "./utils/InView";
-import { ReactComponent as Avatar1 } from "./assets/taj-mahal.svg";
-import { ReactComponent as Avatar2 } from "./assets/india-map.svg";
 
 function App() {
   const [showMenu, setShowMenu] = React.useState(false);
@@ -68,25 +66,13 @@ function App() {
             <span className="animate-character">Pranav</span>
             <span className="dotColorTheme">.</span>
             <br />
-            <span className="profile">
-              I'm a UI Developer based in Pune, India.
-            </span>
+            <p className="profile">
+              I'm a <span className="animate-character">UI Developer</span>{" "}
+              based in Pune, India<span className="dotColorTheme">.</span>
+            </p>
           </h1>
         </header>
-        <Arrow href="#portfolio" style={{ cursor: "pointer" }} />
-      </section>
-
-      <section>
-        <header className="about-header">
-          <h1>
-            About<span className="dotColorTheme">.</span>
-          </h1>
-        </header>
-        <Arrow href="#about" style={{ cursor: "pointer" }} />
-      </section>
-
-      <section id="about">
-        <About aboutRef={aboutRef} />
+        <Arrow />
       </section>
 
       <section>
@@ -100,6 +86,19 @@ function App() {
 
       <section id="projects">
         <Projects projectsRef={projectsRef} />
+      </section>
+
+      <section>
+        <header className="about-header">
+          <h1>
+            About<span className="dotColorTheme">.</span>
+          </h1>
+        </header>
+        <Arrow href="#about" style={{ cursor: "pointer" }} />
+      </section>
+
+      <section id="about">
+        <About aboutRef={aboutRef} />
         <Footer />
       </section>
     </div>
