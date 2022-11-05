@@ -33,6 +33,9 @@ function Footer() {
       <Separator />
 
       <footer className="Footer">
+        <h1 className="contact-header">
+          Contact<span className="dotColorTheme">.</span>
+        </h1>
         <a
           className="footerItem"
           href="https://www.linkedin.com/in/pranavparge"
@@ -45,7 +48,7 @@ function Footer() {
           className="footerItem"
           href="mailto:pranavparge@gmail.com?subject=Hello Pranav"
         >
-          pranavparge@gmail.com
+          Email
         </a>
         <a
           className="footerItem"

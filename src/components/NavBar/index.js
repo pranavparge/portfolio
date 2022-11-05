@@ -64,30 +64,38 @@ const Navbar = ({ showMenu, activeMenu }) => {
         className={(activeMenu === "portfolio" && "nav1") || "nav1"}
         href="#portfolio"
       >
-        Pranav Parge<span className="dot"></span>
+        Pranav Parge
+        <span className="dot" />
       </a>
-      <a
-        className={(activeMenu === "projects" && "nav1 underline") || "nav1"}
-        href="#projects"
+      <span
         style={{
-          visibility: visible,
-          opacity: !rotate ? "0" : "1",
-          transition: "all .5s",
+          marginLeft: "auto",
+          width: "20vw",
         }}
       >
-        Projects
-      </a>
-      <a
-        className={(activeMenu === "about" && "nav1 underline") || "nav1"}
-        href="#about"
-        style={{
-          visibility: visible,
-          opacity: !rotate ? "0" : "1",
-          transition: "all .5s",
-        }}
-      >
-        About
-      </a>
+        <a
+          className={(activeMenu === "projects" && "nav3 underline") || "nav1"}
+          href="#projects"
+          style={{
+            visibility: visible,
+            opacity: !rotate ? "0" : "1",
+            transition: "all .5s",
+          }}
+        >
+          Projects
+        </a>
+        <a
+          className={(activeMenu === "about" && "nav3 underline") || "nav1"}
+          href="#about"
+          style={{
+            visibility: visible,
+            opacity: !rotate ? "0" : "1",
+            transition: "all .5s",
+          }}
+        >
+          About
+        </a>
+      </span>
       <span
         className={(rotate && "nav2-rotate") || "nav2-rotate-not"}
         onMouseOver={showMenuOptions}

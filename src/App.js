@@ -3,12 +3,13 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/NavBar";
-import Portfolio from "./components/Portfolio";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Arrow from "./components/Arrow";
 import useIsInViewport from "./utils/InView";
+import { ReactComponent as Avatar1 } from "./assets/taj-mahal.svg";
+import { ReactComponent as Avatar2 } from "./assets/india-map.svg";
 
 function App() {
   const [showMenu, setShowMenu] = React.useState(false);
@@ -36,21 +37,21 @@ function App() {
       (!portfolioInView && !aboutInView && !projectsInView)
     ) {
       window.document.title = "Pranav - Portfolio";
-      // window.document.location.href = "#porfolio"; not working with chrome / safari
+      window.history.pushState(null, null, "#portfolio");
       setActiveMenu("portfolio");
     } else if (
       (portfolioInView && aboutInView && !projectsInView) ||
       (!portfolioInView && aboutInView && !projectsInView)
     ) {
       window.document.title = "Pranav - About";
-      // window.document.location.href = "#about";
+      window.history.pushState(null, null, "#about");
       setActiveMenu("about");
     } else if (
       (portfolioInView && aboutInView && projectsInView) ||
       (!portfolioInView && !aboutInView && projectsInView)
     ) {
       window.document.title = "Pranav - Projects";
-      // window.document.location.href = "#projects";
+      window.history.pushState(null, null, "#projects");
       setActiveMenu("projects");
     }
   }, [portfolioInView, aboutInView, projectsInView]);
@@ -59,20 +60,20 @@ function App() {
     <div className="App">
       <Navbar showMenu={showMenu} activeMenu={activeMenu} />
 
-      <section>
+      <section id="portfolio" ref={portfolioRef}>
         <header className="portfolio-header">
           <h1>
             <span className="greeting">Hi ! I Am</span>
             <br />
             <span className="animate-character">Pranav</span>
-            <span className="dotColor">.</span>
+            <span className="dotColorTheme">.</span>
+            <br />
+            <span className="profile">
+              I'm a UI Developer based in Pune, India.
+            </span>
           </h1>
         </header>
-        <Arrow />
-      </section>
-
-      <section id="portfolio">
-        <Portfolio portfolioRef={portfolioRef} />
+        <Arrow href="#portfolio" style={{ cursor: "pointer" }} />
       </section>
 
       <section>
@@ -81,7 +82,7 @@ function App() {
             About<span className="dotColorTheme">.</span>
           </h1>
         </header>
-        <Arrow />
+        <Arrow href="#about" style={{ cursor: "pointer" }} />
       </section>
 
       <section id="about">
@@ -94,7 +95,7 @@ function App() {
             Projects<span className="dotColorTheme">.</span>
           </h1>
         </header>
-        <Arrow />
+        <Arrow href="#projects" style={{ cursor: "pointer" }} />
       </section>
 
       <section id="projects">

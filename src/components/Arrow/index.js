@@ -1,9 +1,9 @@
 import React from "react";
 import "./index.css";
 
-function Arrow() {
+function Arrow({ style, href }) {
   return (
-    <div className="Arrow">
+    <a className="Arrow" style={{ ...style }} href={href}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="49"
@@ -18,7 +18,7 @@ function Arrow() {
           transform="translate(-936 -990)"
         />
       </svg>
-    </div>
+    </a>
   );
 }
 

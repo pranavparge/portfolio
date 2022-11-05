@@ -19,9 +19,9 @@ a {
 }
 
 .dot {
-  height: 10px;
-  width: 10px;
-  background-color: #290092;
+  height: 0.5vw;
+  width: 0.5vw;
+  background-color: #23a6d5;
   border-radius: 50%;
   display: inline-block;
   margin: 0px 0px 0px 3px;
@@ -46,20 +46,21 @@ a {
   left: 0;
 }
 
-.underline {
-  text-decoration-line: underline;
-  -webkit-text-decoration-line: underline;
-  text-decoration-color: #290092;
-  -webkit-text-decoration-color: #290092;
-}
-
 .nav1 {
-  font-size: calc(2vw + 2vmin);
-  font-weight: lighter;
+  font-size: calc(1vw + 2vmin);
   margin-left: calc(24px + 2vmin);
   display: inline-block;
   position: relative;
   cursor: pointer;
+}
+
+.nav3 {
+  font-size: calc(1vw + 2vmin);
+  margin-left: calc(24px + 2vmin);
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  color: #23a6d5;
 }
 
 .nav1:after {
@@ -70,7 +71,7 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #290092;
+  background-color: #23a6d5;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
