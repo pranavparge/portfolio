@@ -8,6 +8,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import Slide from "@mui/material/Slide";
 import Browser from "../Browser";
 import Arrow from "../../assets/right-arrow.svg";
+import Separator from "../Separator";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -59,10 +60,13 @@ function Project({
         </Toolbar>
 
         <div className="dialog">
-          <h1 className="project-header-dialog">
+          <h1 className="animate-character project-header-dialog">
             {projectName}
             <span className="dotColorTheme">.</span>
           </h1>
+          <Separator
+            style={{ margin: "0", marginTop: "2vh", marginBottom: "2vh" }}
+          />
           <section className="project-brief-dialog">
             Role<span className="dotColorTheme"> - </span> {projectRole}
             <br /> Team Size <span className="dotColorTheme"> - </span>
