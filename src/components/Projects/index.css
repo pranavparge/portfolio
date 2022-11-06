@@ -32,12 +32,14 @@
 }
 
 .project-role {
+  font-weight: normal;
   font-size: calc(0.5vw + 2vmin);
   color: #00000095;
   line-height: 2em;
 }
 
 .learn-more {
+  font-weight: normal;
   font-size: calc(0.5vw + 2vmin);
   color: #00000095;
   line-height: 2em;
@@ -45,4 +47,15 @@
   justify-content: flex-start;
   align-items: center;
   cursor: pointer;
+}
+
+.project-img {
+  height: 80vh;
+  width: 80vw;
+  border-bottom-left-radius: 0.5vw;
+  border-bottom-right-radius: 0.5vw;
+}
+
+.react-logo {
+  height: 50%;
 }

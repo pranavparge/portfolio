@@ -4,6 +4,7 @@
 
 .container {
   border: 0.5vw solid #f1f1f1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-top-left-radius: 1vw;
   border-top-right-radius: 1vw;
   border-bottom-left-radius: 1vw;
