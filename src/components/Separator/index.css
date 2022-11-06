@@ -11,7 +11,7 @@
   min-width: initial;
 
   position: relative;
-  margin: 0px 2vw 0 2vw;
+  margin: 15vh 2vw 10vh 2vw;
   grid-area: 2 / 1 / 3 / 2;
   justify-self: stretch;
   align-self: start;

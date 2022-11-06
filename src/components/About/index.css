@@ -12,11 +12,6 @@
   align-items: flex-start;
 }
 
-.break {
-  flex-basis: 100%;
-  height: 0;
-}
-
 .about-me-header {
   font-size: calc(2vw + 2vmin);
 }

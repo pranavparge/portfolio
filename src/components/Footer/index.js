@@ -30,7 +30,7 @@ function Footer() {
         Back to top
       </div>
 
-      <Separator />
+      <Separator style={{ marginBottom: "1vh" }} />
 
       <footer className="Footer">
         <h1 className="contact-header">

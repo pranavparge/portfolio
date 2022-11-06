@@ -1,11 +1,48 @@
 .Projects {
-  text-align: justify;
   font-size: calc(1vw + 2vmin);
   color: #000000;
   background-color: #ffffff;
   padding: 10vh;
   min-height: 100vh;
+}
+
+.project-info {
+  all: unset;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
+}
+
+.project-header {
+  font-size: calc(2vw + 2vmin);
+}
+
+.project-objective {
+  font-size: calc(1vw + 2vmin);
+  line-height: 1.5em;
+}
+
+.project-details {
+  all: unset;
+  font-size: calc(1vw + 2vmin);
+  line-height: 1.5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-role {
+  font-size: calc(0.5vw + 2vmin);
+  color: #00000095;
+  line-height: 2em;
+}
+
+.learn-more {
+  font-size: calc(0.5vw + 2vmin);
+  color: #00000095;
+  line-height: 2em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
 }
