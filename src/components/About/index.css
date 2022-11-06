@@ -6,14 +6,13 @@
   min-height: 100vh;
 }
 
-.AboutFlex {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+.flex {
+  width: 50%;
 }
 
 .about-me-header {
   font-size: calc(2vw + 2vmin);
+  margin-bottom: 0;
 }
 
 .company-header {
@@ -35,14 +34,16 @@
 
 .about-me-section {
   all: unset;
-  width: 50%;
   margin: 1vw;
+  display: flex;
+  align-items: flex-start;
 }
 
 .interests-section {
   all: unset;
-  width: 50%;
   margin: 1vw;
+  display: flex;
+  align-items: flex-start;
 }
 
 .likes-certifications-list {
