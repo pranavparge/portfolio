@@ -1,0 +1,16 @@
+.dialog {
+  margin: 2vw;
+}
+
+.project-header-dialog {
+  all: unset;
+  font-size: calc(5vw + 2vmin);
+  font-weight: bolder;
+}
+
+.project-brief-dialog {
+  margin-top: 5vh;
+  font-size: calc(1vw + 2vmin);
+  line-height: 2em;
+  font-weight: 300;
+}

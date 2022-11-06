@@ -39,6 +39,7 @@
 }
 
 .learn-more {
+  all: unset;
   font-weight: normal;
   font-size: calc(0.5vw + 2vmin);
   color: #00000095;

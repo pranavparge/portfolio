@@ -1,57 +1,38 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
 import "./index.css";
+import Project from "./project";
 import Separator from "../Separator";
-import Browser from "../Browser";
 import Twilio from "../../assets/Twilio.png";
 import Bank from "../../assets/Bank.png";
-import Arrow from "../../assets/right-arrow.svg";
 import ReactLogo from "../../assets/react-logo.svg";
-import Typewriter from "typewriter-effect";
 
 function Projects({ projectsRef }) {
-  const Project = ({ projectName, projectObj, projectBrowser }) => (
-    <>
-      <section className="project-info">
-        <h2 className="project-header">
-          {projectName}
-          <span className="dotColorTheme">.</span>
-          <div className="project-role">React Developer</div>
-        </h2>
-        <p className="project-objective">
-          {projectObj}
-          <span className="dotColorTheme">.</span>
-          <div className="learn-more">
-            Learn more{" "}
-            <img
-              style={{
-                height: "5vh",
-                width: "5vw",
-              }}
-              src={Arrow}
-              alt="Twilio"
-            ></img>
-          </div>
-        </p>
-      </section>
-      <section className="project-details">
-        <Browser>{projectBrowser}</Browser>
-      </section>
-    </>
-  );
-
   return (
     <div ref={projectsRef} className="Projects">
       <Project
         projectName={"Contact Center"}
         projectObj={"Business to Business Contact Center"}
+        projectRole={"Twilio and React Developer"}
+        projectSize={"5"}
+        projectStack={"React and Twilio"}
+        projectDescription={
+          "A contact center to be used by the agents to handle all customer related queries. Powered using the many solutions provided by Twilio. It enables the agent to handle calls, web-chats, callback and voicemail tasks over 37 countries. Twilio drives these various functionalities of communications and allows creation of plugins using React."
+        }
         projectBrowser={
           <img className="project-img" src={Twilio} alt="Twilio"></img>
         }
       />
       <Separator />
       <Project
-        projectName={"Payments"}
-        projectObj={"Payments Portal for a Bank"}
+        projectName={"Payments Portal"}
+        projectObj={"Payments Portal for a International Bank"}
+        projectRole={"React Developer"}
+        projectSize={"3"}
+        projectStack={"Frontend: React | Backend: Java"}
+        projectDescription={
+          "International bank, in need of a payments gateway which would work specifically for high-level transcations. Leveraged by bank clients with big investments."
+        }
         projectBrowser={
           <img
             style={{ height: "80vh" }}
@@ -64,7 +45,13 @@ function Projects({ projectsRef }) {
       <Separator />
       <Project
         projectName={"Mainframe to React Migration"}
-        projectObj={"Bank Administration website"}
+        projectObj={"International Bank Administration website"}
+        projectRole={"React Developer"}
+        projectSize={"10"}
+        projectStack={"Frontend: React | Backend: Java"}
+        projectDescription={
+          "International bank needed to transform their legacy system coded in COBOL to a user-efficient React website."
+        }
         projectBrowser={
           <div
             style={{
