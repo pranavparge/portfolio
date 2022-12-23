@@ -23,7 +23,7 @@ function Projects({ projectsRef }) {
           <img className="project-img" src={Twilio} alt="Twilio"></img>
         }
       />
-      <Separator />
+      <Separator style={{ margin: "1em 0 1em 0" }} />
       <Project
         projectName={"Payments Portal"}
         projectObj={"Payments Portal for a International Bank"}
@@ -42,7 +42,7 @@ function Projects({ projectsRef }) {
           ></img>
         }
       />
-      <Separator />
+      <Separator style={{ margin: "1em 0 1em 0" }} />
       <Project
         projectName={"Mainframe to React Migration"}
         projectObj={"International Bank Administration website"}

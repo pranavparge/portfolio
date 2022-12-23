@@ -67,23 +67,14 @@ function About({ aboutRef }) {
           <div className="flex">
             <h2 className="about-me-header">
               Certifications
-              <span className="wip">
+              {/* <span className="wip">
                 ( <u>In-progress</u> )
-              </span>
+              </span> */}
             </h2>
             <ul className="likes-certifications-list">
+              <li>Meta Front-End Developer Professional Certificate</li>
               <li>PluralSight Front-end Web Developer + AEM</li>
               <li>Udacity Nanodegree Python</li>
-              <li>
-                <u style={{ color: "blue" }}>
-                  Meta Front-End Developer Professional Certificate
-                </u>
-              </li>
-              <li>
-                <u style={{ color: "blue" }}>
-                  Google UX Design Professional Certificate
-                </u>
-              </li>
             </ul>
           </div>
 

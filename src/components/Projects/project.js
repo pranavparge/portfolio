@@ -6,7 +6,7 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import Slide from "@mui/material/Slide";
-import Browser from "../Browser";
+// import Browser from "../Browser";
 import Arrow from "../../assets/right-arrow.svg";
 import Separator from "../Separator";
 
@@ -60,12 +60,17 @@ function Project({
         </Toolbar>
 
         <div className="dialog">
-          <h1 className="animate-character project-header-dialog">
+          <h1 className="project-header-dialog">
             {projectName}
             <span className="dotColorTheme">.</span>
           </h1>
           <Separator
-            style={{ margin: "0", marginTop: "2vh", marginBottom: "2vh" }}
+            style={{
+              width: "100%",
+              margin: "0",
+              marginTop: "4vh",
+              marginBottom: "2vh",
+            }}
           />
           <section className="project-brief-dialog">
             Role<span className="dotColorTheme"> - </span> {projectRole}
@@ -103,7 +108,7 @@ function Project({
         </p>
       </section>
       <section className="project-details">
-        <Browser>{projectBrowser}</Browser>
+        {/* <Browser>{projectBrowser}</Browser> */}
       </section>
     </>
   );

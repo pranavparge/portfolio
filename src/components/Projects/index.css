@@ -14,10 +14,12 @@
 }
 
 .project-header {
-  font-size: calc(2vw + 2vmin);
+  width: 50%;
+  font-size: calc(1.5vw + 2vmin);
 }
 
 .project-objective {
+  width: 50%;
   font-size: calc(1vw + 2vmin);
   line-height: 1.5em;
 }
