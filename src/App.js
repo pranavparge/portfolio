@@ -1,5 +1,3 @@
-// import logo from "./assets/react-logo.svg";
-// <img src={logo} className="App-logo" alt="React logo" />
 import React from "react";
 import "./App.css";
 import Navbar from "./components/NavBar";

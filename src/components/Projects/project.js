@@ -98,8 +98,9 @@ function Project({
             Learn more{" "}
             <img
               style={{
-                height: "5vh",
-                width: "5vw",
+                height: "1em",
+                width: "1em",
+                marginLeft: "0.5em",
               }}
               src={Arrow}
               alt="Twilio"

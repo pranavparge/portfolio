@@ -2,32 +2,32 @@
   font-size: calc(1vw + 2vmin);
   color: #000000;
   background-color: #ffffff;
-  padding: 10vh;
-  min-height: 100vh;
+  padding: 10%;
 }
 
 .flex {
-  width: 50%;
+  width: 100%;
 }
 
 .about-me-header {
   font-size: calc(2vw + 2vmin);
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .company-header {
-  font-size: calc(0.5vw + 2vmin);
+  font-size: calc(0.5em + 2vmin);
   margin-bottom: 0;
 }
 
 .company-info {
-  font-size: calc(0.5vw + 2vmin);
+  font-size: calc(0.5em + 1.5vmin);
   line-height: 1.5em;
   margin-top: 0;
 }
 
 .about-me {
-  font-size: calc(0.5vw + 2vmin);
+  font-size: calc(0.5em + 2vmin);
   line-height: 1.5em;
   text-align: justify;
 }
@@ -35,34 +35,42 @@
 .about-me-section {
   all: unset;
   margin: 1vw;
-  display: flex;
-  align-items: flex-start;
 }
 
 .interests-section {
   all: unset;
   margin: 1vw;
-  display: flex;
-  align-items: flex-start;
 }
 
 .likes-certifications-list {
-  font-size: calc(0.5vw + 2vmin);
-  line-height: 2em;
+  font-size: calc(0.5em + 1.5vmin);
+  line-height: 1.5em;
 }
 
 .experience-list {
-  font-size: calc(0.5vw + 2vmin);
-  line-height: 2em;
+  font-size: calc(0.5em + 2vmin);
+  line-height: 1.5em;
 }
 
-.logo {
-  height: 4vh;
-  width: 4vw;
+.emoji {
+  margin-left: 0.5em;
+  height: 2em;
+  width: 2em;
 }
 
 .wip {
   margin-left: 1vw;
-  font-size: calc(0.5vw + 2vmin);
+  font-size: calc(0.5em + 2vmin);
   color: blue;
+}
+
+@media screen and (min-width: 1024px) {
+  .about-me-section {
+    display: flex;
+    align-items: flex-start;
+  }
+  .interests-section {
+    display: flex;
+    align-items: flex-start;
+  }
 }

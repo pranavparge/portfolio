@@ -12,11 +12,11 @@
 }
 
 .greeting {
-  font-size: calc(4vw + 2vmin);
+  font-size: 1em;
 }
 
 .profile {
-  font-size: calc(2vw + 2vmin);
+  font-size: 0.5em;
 }
 
 .animate-character {
@@ -50,7 +50,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(4vw + 2vmin);
+  font-size: calc(3.5vw + 2vmin);
   color: #000000;
   background-color: #ffffff;
 }

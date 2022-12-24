@@ -1,8 +1,8 @@
 import React from "react";
 import "./index.css";
 import moment from "moment";
-import pizza from "../../assets/pizza.svg";
-import sitar from "../../assets/sitar.svg";
+// import pizza from "../../assets/pizza.svg";
+// import sitar from "../../assets/sitar.svg";
 
 function About({ aboutRef }) {
   function calculateYears(startDate, endDate) {
@@ -43,9 +43,11 @@ function About({ aboutRef }) {
                 <p className="company-info">
                   Progressive Education Society's Modern College of Engineering
                   <br />
-                  - Affiliated to Savitribai Phule Pune University
-                  <br />
-                  - Department of Computer Engineering <br />- CGPA 8.31
+                  <ul>
+                    <li>Affiliated to Savitribai Phule Pune University</li>
+                    <li>Department of Computer Engineering</li>
+                    <li>CGPA 8.31</li>
+                  </ul>
                 </p>
               </li>
               <li>
@@ -54,9 +56,14 @@ function About({ aboutRef }) {
                 </h3>
                 <p className="company-info">
                   MAEER'S Maharashtra Institute of Technology Polytechnic <br />
-                  - Affiliated to Maharashtra State Board of Technical Education
-                  <br />
-                  - Department of Computer Engineering <br />- Percentage 85.94
+                  <ul>
+                    <li>
+                      Affiliated to Maharashtra State Board of Technical
+                      Education
+                    </li>
+                    <li>Department of Computer Engineering</li>
+                    <li>Percentage 85.94</li>
+                  </ul>
                 </p>
               </li>
             </ul>
@@ -85,11 +92,11 @@ function About({ aboutRef }) {
               <li>マンガ</li>
               <li>
                 Indian Classical Music
-                <img src={sitar} className="logo" alt="Sitar logo" />
+                {/* <img src={sitar} className="emoji" alt="Sitar logo" /> */}
               </li>
               <li>
                 Pizza
-                <img src={pizza} className="logo" alt="Pizza logo" />
+                {/* <img src={pizza} className="emoji" alt="Pizza logo" /> */}
               </li>
             </ul>
           </div>

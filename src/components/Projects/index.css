@@ -2,8 +2,7 @@
   font-size: calc(1vw + 2vmin);
   color: #000000;
   background-color: #ffffff;
-  padding: 15vh;
-  min-height: 100vh;
+  padding: 10%;
 }
 
 .project-info {
