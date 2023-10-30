@@ -20,7 +20,7 @@ function About({ aboutRef }) {
                 <h3 className="company-header">Accenture</h3>
                 <p className="company-info">
                   Application Development Analyst - UI <br />
-                  From November 2021
+                  From November 2021 till October 2023
                 </p>
               </li>
               <li>
@@ -105,14 +105,14 @@ function About({ aboutRef }) {
       <section>
         <p className="about-me">
           Little more about me, I'm {calculateYears([1997, 7], Date.now())}{" "}
-          years of age. My total years of experience in UI is coming upto{" "}
+          years of age. My total years of experience in UI is{" "}
           {calculateYears([2019, 8], Date.now())} years. My prime expertise is
           in web development using <b>React</b>. Although I also have had a fair
           share of experience using the other technologies like <b>Angular</b>{" "}
           and <b>Vue</b>. I have dabbled a little in Java for development of
-          REST APIs and some niche technologies like Twilio. My love is foremost
-          for the look and feel of anything I develop, so if you like my website
-          feel free to reach out, contact details below.
+          REST APIs and some niche technologies like Twilio for IVR development.
+          My love is foremost for the look and feel of anything I develop, so if
+          you like my website feel free to reach out, contact details below.
         </p>
         <h2 className="about-me-header">
           <span className="animate-character">Wow !</span> Thanks for sticking

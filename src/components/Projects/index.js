@@ -11,8 +11,22 @@ function Projects({ projectsRef }) {
   return (
     <div ref={projectsRef} className="Projects">
       <Project
-        projectName={"Contact Center"}
-        projectObj={"Business to Business Contact Center"}
+        projectName={"Dealer Agent Application"}
+        projectObj={"Agent Android Tablet Application"}
+        projectRole={"React Native Developer"}
+        projectSize={"20"}
+        projectStack={"React Native"}
+        projectDescription={
+          "An android tablet based application for enterprise customers to reach business and access various telecom features. I was responsible for drafting and rectifying functional enablers, development, maintenance and testing multiple features using low level designs."
+        }
+        projectBrowser={
+          <img className="project-img" src={Twilio} alt="Twilio"></img>
+        }
+      />
+      <Separator style={{ margin: "1em 0 1em 0" }} />
+      <Project
+        projectName={"Customer Contact Center"}
+        projectObj={"Business - Business Contact Center"}
         projectRole={"Twilio and React Developer"}
         projectSize={"5"}
         projectStack={"React and Twilio"}
