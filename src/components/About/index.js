@@ -17,6 +17,13 @@ function About({ aboutRef }) {
             <h2 className="about-me-header">Professional Experience</h2>
             <ul className="experience-list">
               <li>
+                <h3 className="company-header">KPMG</h3>
+                <p className="company-info">
+                  Consultant - UI <br />
+                  From December 2023 till August 2024
+                </p>
+              </li>
+              <li>
                 <h3 className="company-header">Accenture</h3>
                 <p className="company-info">
                   Application Development Analyst - UI <br />
@@ -36,6 +43,18 @@ function About({ aboutRef }) {
           <div className="flex">
             <h2 className="about-me-header">Education</h2>
             <ul className="experience-list">
+              <li>
+                <h3 className="company-header">
+                  Masters of Science in Software Engineering (2024-2025)
+                </h3>
+                <p className="company-info">
+                  University of Limerick
+                  <br />
+                  <ul>
+                    <li>GPA 3.52</li>
+                  </ul>
+                </p>
+              </li>
               <li>
                 <h3 className="company-header">
                   Bachelors in Engineering (2016-2019)

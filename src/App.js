@@ -66,7 +66,7 @@ function App() {
             <br />
             <p className="profile">
               I'm a <span className="animate-character">UI Developer</span>{" "}
-              based in Pune, India<span className="dotColorTheme">.</span>
+              based in Ireland<span className="dotColorTheme">.</span>
             </p>
           </h1>
         </header>
