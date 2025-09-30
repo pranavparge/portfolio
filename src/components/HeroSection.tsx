@@ -71,7 +71,7 @@ export function HeroSection() {
                 whileHover={{ scale: 1.1 }}
               >
                 <motion.div
-                  className="p-3 sm:p-4 bg-card/80 backdrop-blur-sm border border-border rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:border-primary/30"
+                  className="hover-lift p-3 sm:p-4 bg-card/80 backdrop-blur-sm border border-border rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:border-primary/30"
                   style={{
                     transition:
                       "background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
@@ -113,8 +113,7 @@ export function HeroSection() {
               }}
             >
               <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
-              <span className="hidden sm:inline">Get In Touch</span>
-              <span className="sm:hidden">Contact</span>
+              <span className="sm:inline">Get In Touch</span>
             </Button>
           </motion.div>
         </motion.div>
