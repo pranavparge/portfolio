@@ -27,7 +27,7 @@ export function ProjectsSection() {
     {
       title: "UBS",
       description:
-        "Modern, responsive dashboard built with React, TypeScript, and Recharts. Features real-time data visualization, dark/light theme toggle, and advanced filtering. Showcases component architecture and state management best practices.",
+        "Migrated 5 legacy mainframe screens to React, improving admin usability. Implemented secure Java APIs managing user entitlements. Led knowledge transfers and peer code reviews promoting best practices.",
       image: "../../assets/UBS.png",
       technologies: [
         "React",
@@ -42,7 +42,7 @@ export function ProjectsSection() {
     {
       title: "HSBC",
       description:
-        "Pixel-perfect e-commerce frontend with Next.js and Stripe integration. Features include product search, cart management, checkout flow, and responsive design. Optimized for Core Web Vitals and SEO.",
+        "Contributed to a high-value transaction platform processing 1 million transactions daily. Coordinated client demos accelerating feature approvals by 50%. Acted as interim team lead, gaining commendations for leadership.",
       image: "../../assets/HSBC.png",
       technologies: [
         "Next.js",
@@ -57,7 +57,7 @@ export function ProjectsSection() {
     {
       title: "Philip Morris International",
       description:
-        "Reusable React component library with Storybook documentation. Built with TypeScript for type safety and includes accessibility features, theme customization, and comprehensive testing suite.",
+        "Designed chat transfer and escalation features to enhance agent collaboration across 30 countries. Integrated Twilio APIs for SMS, voice, and chat supporting 24/7 multilingual service. Recognized for timely delivery and code quality.",
       image: "../../assets/pmi.png",
       technologies: ["React", "TypeScript", "Storybook", "Jest", "CSS-in-JS"],
       type: "Frontend Development - Web App",
@@ -66,7 +66,7 @@ export function ProjectsSection() {
     {
       title: "Emirates International Telecommunications (du)",
       description:
-        "Modern, responsive dashboard built with React, TypeScript, and Recharts. Features real-time data visualization, dark/light theme toggle, and advanced filtering. Showcases component architecture and state management best practices.",
+        "Developed enterprise customer features for Android tablet using React Native. Collaborated with telecom engineers to improve functionality and enterprise reach. Delivered releases with zero critical bugs in 3 consecutive quarterly sprints.",
       image: "../../assets/du.png",
       technologies: [
         "React",
@@ -81,7 +81,7 @@ export function ProjectsSection() {
     {
       title: "KPMG",
       description:
-        "Pixel-perfect e-commerce frontend with Next.js and Stripe integration. Features include product search, cart management, checkout flow, and responsive design. Optimized for Core Web Vitals and SEO.",
+        "Refactored and optimized legacy frontend reducing bugs by 60%. Integrated Google Maps API and deployed via Google Cloud to enable geo-location-based biodiversity alerts. Collaborated on visualizations and notifications for ecologically sensitive areas.",
       image: "../../assets/KPMG.png",
       technologies: [
         "Next.js",
@@ -96,7 +96,7 @@ export function ProjectsSection() {
     {
       title: "Maruti Suzuki",
       description:
-        "Reusable React component library with Storybook documentation. Built with TypeScript for type safety and includes accessibility features, theme customization, and comprehensive testing suite.",
+        "Developed 10 responsive React screens to track car design iterations, enhancing usability for 100 design engineers. Built reusable components and optimized UI state, reducing rendering time by 20%. Delivered stable, modular code with minimal post-deployment issues.",
       image: "../../assets/maruti-suzuki.png",
       technologies: ["React", "TypeScript", "Storybook", "Jest", "CSS-in-JS"],
       type: "Frontend Development - Web App",
@@ -117,8 +117,8 @@ export function ProjectsSection() {
             Projects
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-4xl mx-auto px-4">
-            Showcasing modern frontend development skills through interactive
-            web and mobile applications.
+            Showcasing frontend development skills through interactive web and
+            mobile applications through-out my professional journery.
           </p>
         </motion.div>
 
@@ -150,7 +150,10 @@ export function ProjectsSection() {
                 </div>
 
                 <h3 className="text-2xl md:text-3xl">{project.title}</h3>
-                <p className="text-muted-foreground leading-relaxed text-lg">
+                <p
+                  className="text-muted-foreground leading-relaxed text-lg"
+                  style={{ textAlign: "justify" }}
+                >
                   {project.description}
                 </p>
 
@@ -195,11 +198,11 @@ export function ProjectsSection() {
           className="text-center mt-16"
         >
           <p className="text-muted-foreground mb-6">
-            Want to see more of my work?
+            Want to see my personal work as well ?
           </p>
           <Button size="lg" className="flex items-center space-x-2 mx-auto">
             <Github className="w-5 h-5" />
-            <span>View All Projects on GitHub</span>
+            <span>View Personal Projects on GitHub</span>
           </Button>
         </motion.div>
       </div>
