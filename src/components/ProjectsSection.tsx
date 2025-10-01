@@ -58,7 +58,7 @@ export function ProjectsSection() {
       title: "Philip Morris International",
       description:
         "Designed chat transfer and escalation features to enhance agent collaboration across 30 countries. Integrated Twilio APIs for SMS, voice, and chat supporting 24/7 multilingual service. Recognized for timely delivery and code quality.",
-      image: "../../assets/pmi.png",
+      image: "../../assets/PMI.png",
       technologies: ["React", "TypeScript", "Storybook", "Jest", "CSS-in-JS"],
       type: "Frontend Development - Web App",
       icon: Code2,
