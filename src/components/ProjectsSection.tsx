@@ -11,14 +11,15 @@ export function ProjectsSection() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsInView(entry.isIntersecting);
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          observer.disconnect();
+        }
       },
       { threshold: 0.2 }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
+    if (ref.current) observer.observe(ref.current);
 
     return () => observer.disconnect();
   }, []);
@@ -122,13 +123,15 @@ export function ProjectsSection() {
           </p>
         </motion.div>
 
-        <div className="space-y-16 sm:space-y-20">
+        <motion.div
+          className="space-y-16 sm:space-y-20"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.45 }}
+        >
           {projects.map((project, index) => (
-            <motion.div
+            <div
               key={project.title}
-              initial={{ opacity: 0, y: 50 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
               className={`grid lg:grid-cols-2 gap-8 sm:gap-12 items-center ${
                 index % 2 === 1 ? "lg:grid-flow-dense" : ""
               }`}
@@ -174,27 +177,23 @@ export function ProjectsSection() {
                   index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""
                 }`}
               >
-                <motion.div
-                  className="aspect-video rounded-xl overflow-hidden flex items-center justify-center"
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.3 }}
-                >
+                <div className="aspect-video rounded-xl overflow-hidden flex items-center justify-center">
                   <ImageWithFallback
                     src={project.image}
                     alt={project.title}
                     className="object-contain max-w-full max-h-full"
                     style={{ backgroundColor: "white", padding: "8em" }}
                   />
-                </motion.div>
+                </div>
               </div>
-            </motion.div>
+            </div>
           ))}
-        </div>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          transition={{ duration: 0.6 }}
           className="text-center mt-16"
         >
           <p className="text-muted-foreground mb-6">
