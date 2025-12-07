@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { ImageWithFallback } from "./ImageWithFallback";
-import { ExternalLink, Github, Code2, Users, Layers, Code } from "lucide-react";
+import { Github, Code2 } from "lucide-react";
 import { Button } from "./ui/button";
 
 export function ProjectsSection() {
@@ -200,9 +200,16 @@ export function ProjectsSection() {
           <p className="text-muted-foreground mb-6">
             Want to see my personal work as well ?
           </p>
-          <Button size="lg" className="flex items-center space-x-2 mx-auto">
-            <Github className="w-5 h-5" />
-            <span>View Personal Projects on GitHub</span>
+          <Button asChild size="lg" className="mx-auto">
+            <a
+              href="https://github.com/pranavparge"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View personal projects on GitHub"
+            >
+              <Github className="w-5 h-5" />
+              <span>View Personal Projects on GitHub</span>
+            </a>
           </Button>
         </motion.div>
       </div>
